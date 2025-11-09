@@ -1,0 +1,25 @@
+.main_prop_container{
+    -fx-background-color: #EEEEEE;
+}
+
+.main_prop_container Label{
+    -fx-fill: #000000;
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+}
+
+.main_prop_container VBox{
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: top_center;
+        -fx-padding: 5 10 5 10;
+        -fx-spacing: 5;
+        -fx-border-width: 2 0 2 0;
+        -fx-border-color: #AAAAAA;
+        -fx-effect: dropshadow(two-pass-box,#DDDDDD,5,0,0,6);
+}
+
+.main_prop_container VBox Label{
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.5em;
+    -fx-alignment: center;
+}

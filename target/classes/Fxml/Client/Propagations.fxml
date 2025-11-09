@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="795.0" styleClass="main_prop_container" stylesheets="@../../Styles/Propagations.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.satelightlinkbadget.Controllers.Client.PropagationsController">
+    <Label layoutX="304.0" layoutY="14.0" prefHeight="35.0" prefWidth="182.0" text="Propagations" AnchorPane.leftAnchor="304.0" AnchorPane.rightAnchor="309.0" AnchorPane.topAnchor="14.0">
+        <graphic>
+          <ImageView fitHeight="29.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@../../Images/icons8-link-40.png" />
+              </image>
+          </ImageView>
+        </graphic>
+    </Label>
+    <VBox layoutX="11.0" layoutY="175.0" prefHeight="384.0" prefWidth="384.0">
+        <Label text="Uplink">
+            <graphic>
+                <FontAwesomeIconView glyphName="ARROW_UP" size="20" />
+            </graphic>
+        </Label>
+        <GridPane prefHeight="297.0" prefWidth="395.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Frequency (GHz) :" textAlignment="RIGHT" wrappingWidth="180.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bandwith (MHz) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bit Rate (Mbps) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Required Eb/No (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Polarization mishmatch (deg) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Implementation loss (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Antenna mispointing loss (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Radome loss (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="7" />
+            <TextField fx:id="frequency_up_txf" GridPane.columnIndex="1" />
+            <TextField fx:id="bandwith_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="bitrate_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="requiredebno_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="polarmish_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="implemloss_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="antennamispoint_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="radomeloss_up_txf" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         <TextField fx:id="availability_up" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Availability (%) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="8" />
+        </GridPane>
+    </VBox>
+    <VBox layoutX="398.0" layoutY="175.0" prefHeight="384.0" prefWidth="384.0">
+        <Label text="Downlink">
+            <graphic>
+                <FontAwesomeIconView glyphName="ARROW_DOWN" size="20" />
+            </graphic>
+        </Label>
+        <GridPane prefHeight="297.0" prefWidth="395.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Frequency (GHz) :" textAlignment="RIGHT" wrappingWidth="180.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bandwith (MHz) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bit Rate (Mbps) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Required Eb/No (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Polarization mishmatch (deg) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="4" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Implementation loss (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="5" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Antenna mispointing loss (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="6" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Radome loss (dB) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="7" />
+            <TextField fx:id="frequency_down_txf" GridPane.columnIndex="1" />
+            <TextField fx:id="bandwith_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="bitrate_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="requiredebno_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="polarmish_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="implemloss_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="antennamispoint_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="radomeloss_down_txf" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         <TextField fx:id="availability_down" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Availability (%) :" textAlignment="RIGHT" wrappingWidth="180.0" GridPane.rowIndex="8" />
+        </GridPane>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="176.0" styleClass="main_menu_container" stylesheets="@../../Styles/ClientMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.satelightlinkbadget.Controllers.Client.ClientMenuController">
+   <AnchorPane prefHeight="738.0" prefWidth="176.0" styleClass="left_container">
+      <VBox prefHeight="100.0" prefWidth="180.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <ImageView fitHeight="48.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../Images/sat_logo.png" />
+            </image>
+         </ImageView>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="LinkBudget" />
+      </VBox>
+      <VBox layoutY="84.0" prefHeight="525.0" prefWidth="180.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="84.0">
+         <Button fx:id="sat_menu_btn" mnemonicParsing="false" text="Satellite">
+            <graphic>
+               <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../Images/sat_logo.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="earth_st_menu_btn" mnemonicParsing="false" prefWidth="121.0" text="Earth Station">
+            <graphic>
+               <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../Images/icons8-antenna-40.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+         <Button fx:id="prop_btn" mnemonicParsing="false" text="Propagation">
+            <graphic>
+               <ImageView fitHeight="32.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <Image url="@../../Images/Link_btn.png" />
+               </ImageView>
+            </graphic>
+         </Button>
+         <Line endX="120.0" />
+         <Button fx:id="result_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Dashboard">
+            <graphic>
+               <FontAwesomeIconView glyphName="HOME" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="calc_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Calculate">
+            <graphic>
+               <FontAwesomeIconView glyphName="PLAY" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="save_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Save">
+            <graphic>
+               <FontAwesomeIconView glyphName="SAVE" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="data_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Data">
+            <graphic>
+               <FontAwesomeIconView glyphName="DATABASE" />
+            </graphic>
+         </Button>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="610.0" prefHeight="118.0" prefWidth="152.0" styleClass="exit_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <Button fx:id="exit_btn" mnemonicParsing="false" text="Exit">
+            <graphic>
+               <FontAwesomeIconView glyphName="EXTERNAL_LINK" />
+            </graphic>
+         </Button>
+      </VBox>
+   </AnchorPane>
+</VBox>
